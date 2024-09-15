@@ -19,7 +19,6 @@ jobs:
       uses: ComunidadAylas/PackSquash-action@v4
       with:
         packsquash_version: latest # Uses the latest PackSquash release supported by the action
-        shader_source_transformation_strategy: keep_as_is
 
     - name: Create ZIP file
       run: |
@@ -29,7 +28,7 @@ jobs:
         zip -r "${ZIP_NAME}" .
 
     - name: Upload ZIP artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: resource-pack-artifact
         path: ${{ env.ZIP_NAME }}
