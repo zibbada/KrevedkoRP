@@ -1,1 +1,4 @@
-{ "custom.fart": { "category": "master", "sounds": [ "custom/fart" ] } }
+{ "custom.fart": { "category": "master", "sounds": [ "custom/fart" ] },
+  "custom.shit": { "category": "master", "sounds": [ "custom/shit" ] },
+  "custom.moan": { "category": "master", "sounds": [ "custom/moan" ] }
+}
